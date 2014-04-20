@@ -116,6 +116,15 @@ function _s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
 
+/*
+ * Add social media contact into user profile
+ */
+require get_template_directory() . '/inc/social-media-profile.php';
+
+/**
+ * Custom readmore link
+ */
+require get_template_directory() . '/inc/readmore.php';
 
 /**
  * Implement the Custom Header feature.
