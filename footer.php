@@ -12,7 +12,8 @@
 	
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
+			<?php printf( __( 'Proudly powered by %s', '_s' ),
+				'<a href="'.esc_url( __( 'http://wordpress.org/', '_s' ) ). '">' . 'WordPress' . '</a>' ); ?>
 			<span class="sep"> x </span>
 			<?php $themeinfo = wp_get_theme(); ?>
 			<?php printf( __( '%1$s', '_s' ), 
